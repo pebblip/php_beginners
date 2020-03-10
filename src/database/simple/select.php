@@ -21,12 +21,12 @@ $pdos = $pdo->query('select * from Person');
   </thead>
   <tbody>
   <?php foreach ($pdos as $row): ?>
-  <tr>
-    <td><?php echo $row['name']; ?></td>
-    <td><?php echo $row['sex'] == 1 ? '男性' : '女性';?></td>
-    <td><?php echo $row['age'];?></td>
-    <td><?php echo $row['address']; ?></td>
-  </tr>
+    <tr>
+      <td><?php echo $row['name']; ?></td>
+      <td><?php echo $row['sex'] == 1 ? '男性' : '女性';?></td>
+      <td><?php echo $row['age'];?></td>
+      <td><?php echo $row['address']; ?></td>
+    </tr>
   <?php  endforeach; ?>
   </tbody>
 </table>
